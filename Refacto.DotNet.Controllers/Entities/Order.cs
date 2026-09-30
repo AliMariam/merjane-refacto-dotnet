@@ -11,6 +11,6 @@ namespace Refacto.DotNet.Controllers.Entities
         [Column("id")]
         public long Id { get; set; }
 
-        public ICollection<Product>? Items { get; set; }
+        public ICollection<Product> Items { get; set; } = new List<Product>();
     }
 }
